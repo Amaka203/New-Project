@@ -6,24 +6,60 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="bg-white fixed top-0 left-0 right-0 shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+      
+          <img src="https://assets.nicepagecdn.com/d2cc3eaa/6414576/images/logo-image.png" alt="" class="w-40 h-8">
+      
+            <!-- Mobile menu toggle attribute -->
+            <div class="md:hidden">
+              <input type="checkbox" id="menu-toggle" class="hidden peer">
+              <label for="menu-toggle" class="cursor-pointer peer-checked:[&>svg]:hidden">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </label>
+            </div>
+      
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+              <a href="home.html" class="text-black hover:underline">Home</a>
+              <a href="about.html" class="text-black hover:underline">About Us</a>
+              <a href="#" class="text-black hover:underline">Blog</a>
+              <a href="contact.html" class="text-black hover:underline">Contact</a>
+            </div>
+          </div>
+      
+          <!-- Mobile Menu -->
+          <div class="md:hidden hidden peer-checked:block pt-4 pb-4">
+            <a href="home.html" class="block py-2 text-black">Home</a>
+            <a href="about.html" class="block py-2 text-black">About Us</a>
+            <a href="#" class="block py-2 text-black">Blog</a>
+            <a href="contact.html" class="block py-2 text-black">Contact</a>
+          </div>
+        </div>
+      </nav>
+      
     <H1 class="font-bold text-7xl text-white text-center">Contact Us</H1>
- <main class="flex flex-row  bg-gray-800">
+ <main class="flex flex-row">
     <div class="p-16">
         <img src="https://assets.nicepagecdn.com/d2cc3eaa/6414576/images/happy-woman-standing-indoors-drinking-citrus-beverage_171337-14305.jpg" alt="" class="rounded-t-lg w-96">
     </div>
     <div class="pt-40">
-        <h1 class="text-5xl text-white font-bold pb-7">Your results are <br> our top priority!</h1>
-        <p class="text-white pb-10">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Vero optio odit odio corrupti <br> cum accusamus rem fugit recusandae, libero veritatis? <br> Dolorem saepe illo distinctio asperiores dicta exercitationem <br> soluta voluptate harum, cumque esse obcaecati provident nam sed. <br> Voluptas a facere illum maxime corporis corrupti maiores, <br> accusantium, placeat nostrum soluta modi perferendis.</p>
+        <h1 class="text-5xl text-black font-bold pb-7">Your results are <br> our top priority!</h1>
+        <p class="text-black pb-10">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Vero optio odit odio corrupti <br> cum accusamus rem fugit recusandae, libero veritatis? <br> Dolorem saepe illo distinctio asperiores dicta exercitationem <br> soluta voluptate harum, cumque esse obcaecati provident nam sed. <br> Voluptas a facere illum maxime corporis corrupti maiores, <br> accusantium, placeat nostrum soluta modi perferendis.</p>
         <button class="bg-amber-400 hover:bg-slate-600 rounded-tr-lg rounded-bl-lg h-16 w-48 text-white font-bold transition duration-300 ease-in-out">HOW IT WORKS</button>
     </div>
  </main>
  <section class="flex justify-center items-center ">
-    <form action="" method="get" class="w-1/2 bg-white rounded-br-lg rounded-tl-lg pb-10 ">
+    <form action="" method="get" class="w-1/2 bg-white pb-10 ">
         <h1 class=" font-bold text-6xl text-center pt-7">How can I help you?</h1>
         <p class="text-center pt-7 pb-7">Please take a few moments to let me know about yourself and your <br> health goals before we start working together:</p>
-           <input type="Name" placeholder="Enter your name" class="w-full h-20 mt-1 p-2 border-b-2 border-black"> <br>
-           <input type="email" name="" id="" placeholder="Enter a valid email address" class="w-full h-20 mt-1 p-2 border-b-2 border-black"><br>
-           <input type="text" name="" id="" class="w-full h-40 mt-1 p-2 border-b-2 border-black">
+           <input type="Name" placeholder="Enter your name" class="w-full h-20 mt-1 p-2 border border-black"> <br>
+           <input type="email" name="" id="" placeholder="Enter a valid email address" class="w-full h-20 mt-1 p-2 border border-black"><br>
+           <input type="text" name="" id="" class="w-full h-40 mt-1 p-2 border  border-black">
            <button type="submit" class="w-full h-14 py-2 px-5 text-white bg-amber-400 rounded-full hover:bg-gray-800 mt-14">Submit</button>            
     </form>
     

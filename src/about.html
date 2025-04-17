@@ -6,6 +6,42 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="bg-white fixed top-0 left-0 right-0 shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+      
+          <img src="https://assets.nicepagecdn.com/d2cc3eaa/6414576/images/logo-image.png" alt="" class="w-40 h-8">
+      
+            <!-- Mobile menu toggle attribute -->
+            <div class="md:hidden">
+              <input type="checkbox" id="menu-toggle" class="hidden peer">
+              <label for="menu-toggle" class="cursor-pointer peer-checked:[&>svg]:hidden">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </label>
+            </div>
+      
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+              <a href="home.html" class="text-black hover:underline">Home</a>
+              <a href="about.html" class="text-black hover:underline">About Us</a>
+              <a href="#" class="text-black hover:underline">Blog</a>
+              <a href="contact.html" class="text-black hover:underline">Contact</a>
+            </div>
+          </div>
+      
+          <!-- Mobile Menu -->
+          <div class="md:hidden hidden peer-checked:block pt-4 pb-4">
+            <a href="home.html" class="block py-2 text-black">Home</a>
+            <a href="about.html" class="block py-2 text-black">About Us</a>
+            <a href="#" class="block py-2 text-black">Blog</a>
+            <a href="contact.html" class="block py-2 text-black">Contact</a>
+          </div>
+        </div>
+      </nav>
+      
     <section class="flex flex-row justify-around shrink-0">
         <div>
             <img src="https://assets.nicepagecdn.com/d2cc3eaa/6414576/images/cheerful-lady-standing-near-tabl.jpg" alt="" class="rounded-t-lg h-4/5 w-5/6" >
